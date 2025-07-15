@@ -2,15 +2,15 @@
 
 <p align="center">
   <a href="https://sites.duke.edu/dkusmiip/files/2025/05/VCapAV-A-Video-Caption-Based-Audio-Visual-Deepfake-Detection-Dataset.pdf">
-    <img src="https://img.shields.io/badge/Paper%20PDF-📄%20View-%23003B73?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Paper PDF">
+    <img src="https://img.shields.io/badge/Paper%20PDF-📄%20View-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Paper PDF">
   </a>
   <span style="display:inline-block; width:24px;"></span>
   <a href="https://doi.org/10.5281/zenodo.15498946">
-    <img src="https://img.shields.io/badge/Dataset-📦%20Zenodo-%235E4FA2?style=for-the-badge&logo=dataverse&logoColor=white" alt="Dataset Download">
+    <img src="https://img.shields.io/badge/Dataset-📦%20Zenodo-orange?style=for-the-badge&logo=dataverse&logoColor=white" alt="Dataset Download">
   </a>
   <span style="display:inline-block; width:24px;"></span>
   <a href="https://github.com/yourusername/VCapAV#demo">
-    <img src="https://img.shields.io/badge/Demo-🔗%20Run-%232D3E50?style=for-the-badge&logo=playcanvas&logoColor=white" alt="Demo Link">
+    <img src="https://img.shields.io/badge/Demo-🔗%20Run-green?style=for-the-badge&logo=playcanvas&logoColor=white" alt="Demo Link">
   </a>
 </p>
 
