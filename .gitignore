@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+aasist/__pycache__/
+
+# exp result
+exp/
+exp_/
+log_/
+log/
+
+# NTU model
+NTU_/
+
+# nohup log file
+*.log
+*.out
+
+# other py file
+# main_gender.py
+# main_parallel.py
+# main.py
+# main_offset.py
+# main_offset_codec.py
+# main_eow.py
+
+# official ASVspoof5
+asvspoof5/
+
+#scores
+score/
+
+# file's in aasist
+aasist/data_utils.py
+aasist/main.py
+aasist/main_yk.py
+aasist/evaluation.py
+aasist/main_yk_aug_old.py
+aasist/*.log
+aasist/exp_result/
+clipclap/clap_htsat_tiny.pt

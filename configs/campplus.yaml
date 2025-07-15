@@ -1,0 +1,13 @@
+preprocessor:
+  sample_rate: 16000
+  window_size: 0.025
+  window_stride: 0.01
+  window: "hann"
+  features: 80
+  n_fft: 512
+  log: true
+encoder:
+  pooling_layer: "TSTP"
+  embedding_size: 512
+  acoustic_dim: 80
+

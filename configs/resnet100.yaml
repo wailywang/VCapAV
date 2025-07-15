@@ -1,0 +1,20 @@
+preprocessor:
+  sample_rate: 16000
+  normalize: "per_feature"
+  window_size: 0.025
+  window_stride: 0.01
+  window: "hann"
+  features: 80
+  n_fft: 512
+  log: true
+  frame_splicing: 1
+  dither: 0.00001
+  pad_to: 0
+  pad_value: 0.0
+encoder:
+  in_planes: 64
+  block_type: "Bottleneck"
+  pooling_layer: "TSP"
+  embedding_size: 256
+  acoustic_dim: 80
+

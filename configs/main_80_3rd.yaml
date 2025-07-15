@@ -1,0 +1,19 @@
+preprocessor:
+  sample_rate: 16000
+  normalize: "per_feature"
+  window_size: 0.025
+  window_stride: 0.008
+  window: "hann"
+  features: 80
+  n_fft: 1024
+  log: true
+  frame_splicing: 1
+  dither: 0.00001
+  pad_to: 0
+  pad_value: 0.0
+
+encoder:
+  feats_size: 80
+  # n_layers: 16
+  in_planes: 16
+  embedding_size: 128
