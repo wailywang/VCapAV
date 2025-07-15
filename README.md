@@ -82,8 +82,7 @@ pip install -r requirement.txt
 ## Data Preparation
 
 ### Protocol Composition
-
-![Protocol Overview](configs/data_partitioning.png)
+<img src="configs/data_partitioning.png" alt="Protocol Overview" width="70%"/>
 
 | Subset      | Composition                                                     | Total Samples        |
 |-------------|------------------------------------------------------------------|----------------------|
