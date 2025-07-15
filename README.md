@@ -23,6 +23,8 @@ For most audio-visual detection applications, we recommend starting with the `Re
   year={2025}
 }
 ```
+> **Note:** Read the full paper describing the dataset and methodology at:  
+> **[VCapAV: A Video-Caption-Based Audio-Visual Deepfake Detection Dataset (PDF)](https://sites.duke.edu/dkusmiip/files/2025/05/VCapAV-A-Video-Caption-Based-Audio-Visual-Deepfake-Detection-Dataset.pdf)**
 
 ---
 
@@ -174,25 +176,6 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 | `AASIST.pth`         | 47 MB  | `aasist/models/weights/AASIST.pth`                                      |
 | `AASIST-L.pth`       | 86 MB  | `aasist/models/weights/AASIST-L.pth`                                    |
 | `clap_htsat_tiny.pt` | 1.7 GB | [`clipclap/clap_htsat_tiny.pt`](https://huggingface.co/mali6/autocap/blob/main/clap_htsat_tiny.pt) |
-
----
-
-## Benchmark Results
-
-| Subset | Metric       | LightCNN | ResNet18 | AASIST |
-|--------|--------------|----------|----------|--------|
-| Dev 1  | EER (%)      | 0.8435   | 0.3135   | 0.02   |
-|        | minDCF (%)   | 9.72     | 5.43     | 0.01   |
-|        | AUC (%)      | 99.96    | 99.96    | 100    |
-|        | Accuracy (%) | 98.42    | 99.7     | 99.92  |
-| Dev 2  | EER (%)      | 18.89    | 14.67    | 2.96   |
-|        | minDCF (%)   | 83.29    | 78.34    | 0.54   |
-|        | AUC (%)      | 90.46    | 93.82    | 88.91  |
-|        | Accuracy (%) | 73.52    | 75.17    | 99.52  |
-| Dev 3  | EER (%)      | 9.67     | 9.82     | 1.78   |
-|        | minDCF (%)   | 78.53    | 78.27    | 0.36   |
-|        | AUC (%)      | 96.06    | 96.16    | 99.81  |
-|        | Accuracy (%) | 88.24    | 87.87    | 96.29  |
 
 ---
 
