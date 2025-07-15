@@ -21,25 +21,7 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 
 <img src="configs/statistics.png" alt="Protocol Overview" width="70%"/>
 
-For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
-
-> **Note:** The complete VCapAV dataset, including all audio-visual samples, can be downloaded from Zenodo at:  
-> **[https://doi.org/10.5281/zenodo.15498946](https://doi.org/10.5281/zenodo.15498946)**
-
----
-
-## Paper
-
-```bibtex
-@inproceedings{wang2025vcapav,
-  title={VCapAV: A Video-Caption Based Audio-Visual Deepfake Detection Dataset},
-  author={Wang, Yuxi and Wang, Yikang and Zhang, Qishan and Nishizaki, Hiromitsu and Li, Ming},
-  booktitle={Interspeech},
-  year={2025}
-}
-```
-> **Note:** Read the full paper describing the dataset and methodology at:  
-> **[VCapAV: A Video-Caption-Based Audio-Visual Deepfake Detection Dataset (PDF)](https://sites.duke.edu/dkusmiip/files/2025/05/VCapAV-A-Video-Caption-Based-Audio-Visual-Deepfake-Detection-Dataset.pdf)**
+> **Note:** For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
 
 ---
 
@@ -192,6 +174,18 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 | `AASIST-L.pth`       | 86 MB  | `aasist/models/weights/AASIST-L.pth`                                    |
 | `clap_htsat_tiny.pt` | 1.7 GB | [`clipclap/clap_htsat_tiny.pt`](https://huggingface.co/mali6/autocap/blob/main/clap_htsat_tiny.pt) |
 
+---
+
+## Citation
+
+```bibtex
+@inproceedings{wang2025vcapav,
+  title={VCapAV: A Video-Caption Based Audio-Visual Deepfake Detection Dataset},
+  author={Wang, Yuxi and Wang, Yikang and Zhang, Qishan and Nishizaki, Hiromitsu and Li, Ming},
+  booktitle={Interspeech},
+  year={2025}
+}
+```
 ---
 
 <div align="center">
