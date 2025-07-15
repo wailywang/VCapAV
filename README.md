@@ -1,6 +1,6 @@
 # VCapAV
 
-**VCapAV** is an audio-visual deepfake detection benchmark and toolkit, featuring three key models: **AASIST**, **ResNet**, and **LCNN**. The benchmark supports both unimodal and cross-modal forgery detection using spatial frequency features, log-Fbank spectrograms, and raw waveform encodings.
+**VCapAV** is an audio-visual deepfake detection benchmark and toolkit, featuring three key models: **AASIST**, **ResNet18**, and **LCNN**. The benchmark supports both unimodal and cross-modal forgery detection using spatial frequency features, log-Fbank spectrograms, and raw waveform encodings.
 
 ## Dataset Overview
 
@@ -16,7 +16,7 @@
 | Fake Video + Fake Audio | 1,210           | 3.36                    |
 | **Total**               | **90,990**      | **252.75**              |
 
-For most audio-visual detection applications, we recommend starting with the `ResNet + LCNN` ensemble.
+For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
 
 > **Note:** All reported results are based on the closed-world AV-deepfake task using the Wan2.1/Kling/CogVideo benchmark on the `dev` split.
 
@@ -49,9 +49,9 @@ VCapAV/
 │   ├── utils.py           # AASIST-specific utility functions
 │   └── download_dataset.py# Script to download dataset
 ├── clipclap/              # CLAP-based audio-visual feature extractor
-├── configs/               # Training configs (ResNet, LCNN, etc.)
+├── configs/               # Training configs (ResNet18, LCNN, etc.)
 ├── dataset/               # Data loading and preprocessing logic
-├── exp/                   # Training output directory (e.g., checkpoints, logs)
+├── exp/                   # Training output directory
 ├── log/                   # Logging and evaluation output
 ├── modules/               # Model architectures and backbones
 ├── utils/                 # Shared utility functions
@@ -109,19 +109,49 @@ aasist/
 
 ```bash
 cd aasist
-python main.py --config config/AASIST.conf --output_dir exp_result/
+python3 main.py --config ./config/AASIST.conf --comment "aasist"
 ```
 
-### ResNet
+### ResNet18
 
 ```bash
-python main.py --config configs/resnet.yaml --output_dir exp_result/
+for seed in 1; do
+  python3 -u main.py --comment "train_clean_offset_Resnet" --track "FAD" \
+      --gpu 1 --workers 6 --batch_size 64 \
+      --exp_dir "exp/clean" --log_dir "log/clean" \
+      --trn_data_name "train" --dur_range 7 7 \
+      --dev_data_name "dev" \
+      --feat "logFbankCal" --preemph False --vad False --data_aug False --snr_range 0 20 \
+      --aug_rate 0.7 --is_specaug False --speed_aug False --reverb False \
+      --model ResNet18_ASP --model_cfg "configs/main_80.yaml" \
+      --mse_loss False \
+      --model_pretrain None --loss ce --model_freeze_epoch 0 \
+      --classifier Linear --angular_m 0.2 --angular_s 32 --max_step 200000 --dropout 0.4 \
+      --use_amp False --start_epoch 0 --num_epochs 150 --warm_up_epoch 1 --lr 0.001 \
+      --seed ${seed} \
+      --early_stop 50 --offset True
+done
 ```
 
 ### LCNN
 
 ```bash
-python main.py --config configs/lcnn.yaml --output_dir exp_result/
+for seed in 1; do
+  python3 -u main.py --comment "CleanTrain_oneinten_LCNN" --track "ASVspoof5" \
+      --gpu 1 --workers 6 --batch_size 64 \
+      --exp_dir "exp/clean" --log_dir "log/clean" \
+      --trn_data_name "train" --dur_range 7 7 \
+      --dev_data_name "dev" \
+      --feat "logFbankCal" --preemph False --vad False --data_aug False --snr_range 0 20 \
+      --aug_rate 0.7 --is_specaug False --speed_aug False --reverb False \
+      --model LightCNN_lstm --model_cfg "configs/main_80.yaml" \
+      --mse_loss False \
+      --model_pretrain None --loss ce --model_freeze_epoch 0 \
+      --classifier Linear --angular_m 0.2 --angular_s 32 --max_step 200000 --dropout 0.4 \
+      --use_amp False --start_epoch 0 --num_epochs 150 --warm_up_epoch 1 --lr 0.001 \
+      --seed ${seed} \
+      --early_stop 50
+done
 ```
 
 ---
