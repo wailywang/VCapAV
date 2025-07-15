@@ -181,8 +181,11 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 
 ## Contact
 
-For questions or collaborations, please contact:  
-**wa0009xi@e.ntu.edu.sg**
+For questions or collaborations, please contact:  wa0009xi@e.ntu.edu.sg
+
+<a href="mailto:wa0009xi@e.ntu.edu.sg">
+  <img src="https://img.shields.io/badge/Contact-wa0009xi@e.ntu.edu.sg-blue?style=for-the-badge&logo=gmail" alt="Contact Email">
+</a>
 
 ---
 
