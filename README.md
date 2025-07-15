@@ -38,9 +38,6 @@ For most audio-visual detection applications, we recommend starting with the `Re
 ## Repository Structure
 
 ```
-## Repository Structure
-
-```
 VCapAV/
 ├── _engineering/          # Internal tools and engineering utilities
 ├── aasist/                # AASIST model and dataset-specific code
@@ -66,8 +63,6 @@ VCapAV/
 ├── requirement.txt        # Top-level Python package requirements
 ├── LICENSE
 └── README.md
-```
-
 ```
 
 ---
