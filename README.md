@@ -4,7 +4,6 @@
 
 **VCapAV** is an audio-visual deepfake detection benchmark and toolkit featuring three key models: AASIST, ResNet, and LCNN. The benchmark evaluates both unimodal and cross-modal forgeries using spatial frequency features, audio log-fbanks, and raw waveform encodings.
 
-```
 | Category                | Number of Clips   | Total Duration (hours)   |
 |:------------------------|:------------------|:-------------------------|
 | Real Video              | 14,923            | 41.45                    |
@@ -17,7 +16,6 @@
 | Fake Video + Fake Audio | 1,210             | 3.36                     |
 | Total                   | **90,990**        | **252.75**               |
 
-```
 
 For most audio-visual detection applications, we recommend starting with the `ResNet + LCNN` ensemble.
 
