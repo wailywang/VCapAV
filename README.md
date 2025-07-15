@@ -124,11 +124,20 @@ Please download and place it manually under `clipclap/clap_htsat_tiny.pt`.
 
 ## Benchmark Results
 
-| Model    | Dataset  | ACC (%) | AUC (%) | EER (%) |
-|----------|----------|---------|---------|---------|
-| AASIST   | Wan2.1   | 97.3    | 98.4    | 2.15    |
-| ResNet18 | Kling    | 96.2    | 97.1    | 3.60    |
-| LCNN     | CogVideo | 96.7    | 97.9    | 3.05    |
+| Subset   | Metrics    |   LightCNN |   ResNet18 |   AASIST |
+|:---------|:-----------|-----------:|-----------:|---------:|
+| Dev 1    | EER (%)    |     0.8435 |     0.3135 |     0.02 |
+| Dev 1    | minDCF (%) |     9.72   |     5.43   |     0.01 |
+| Dev 1    | AUC (%)    |    99.96   |    99.96   |   100    |
+| Dev 1    | Acc. (%)   |    98.42   |    99.7    |    99.92 |
+| Dev 2    | EER (%)    |    18.8924 |    14.6728 |     2.96 |
+| Dev 2    | minDCF (%) |    83.29   |    78.34   |     0.54 |
+| Dev 2    | AUC (%)    |    90.46   |    93.82   |    88.91 |
+| Dev 2    | Acc. (%)   |    73.52   |    75.17   |    99.52 |
+| Dev 3    | EER (%)    |     9.6714 |     9.8198 |     1.78 |
+| Dev 3    | minDCF (%) |    78.53   |    78.27   |     0.36 |
+| Dev 3    | AUC (%)    |    96.06   |    96.16   |    99.81 |
+| Dev 3    | Acc. (%)   |    88.24   |    87.87   |    96.29 |
 
 ---
 
