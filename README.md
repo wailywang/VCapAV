@@ -1,6 +1,6 @@
 # VCapAV
 
-**VCapAV** is an audio-visual deepfake detection benchmark and toolkit, featuring three key models: **AASIST**, **ResNet18**, and **LCNN**. The benchmark supports both unimodal and cross-modal forgery detection using spatial frequency features, log-Fbank spectrograms, and raw waveform encodings.
+This repository provides the **VCapAV dataset**, which contains both forged and real audio-visual samples, with a focus on environmental sound manipulations. It includes baseline detection models such as **AASIST**, **ResNet18**, and **LCNN**, enabling focused evaluation of non-speech audio forgeries generated through Text-to-Audio and Video-to-Audio synthesis.
 
 ## Dataset Overview
 
