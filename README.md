@@ -56,9 +56,7 @@ VCapAV/
 
 ---
 
-## Setup
-
-### Environment
+## Environment Setup
 
 ```bash
 conda create -n vcapav python=3.8
