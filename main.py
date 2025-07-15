@@ -121,8 +121,8 @@ def main(args):
     key2int = {'bonafide':1,'spoof':0,'genuine':1,'fake':0}
     
     ## training data
-    utt2wav = [line.split() for line in open(f'/SMIIPdata2/ASVspoof5/data/wangyx/scp/{args.trn_data_name}/wav.scp')]
-    utt2label = [line.split() for line in open(f'/SMIIPdata2/ASVspoof5/data/wangyx/scp/{args.trn_data_name}/utt2label')]
+    utt2wav = [line.split() for line in open(f'/your own path/{args.trn_data_name}/wav.scp')]
+    utt2label = [line.split() for line in open(f'/your own path/{args.trn_data_name}/utt2label')]
     
     ##########partial data debug##############
     # 将两个列表合并为一个列表
@@ -152,8 +152,8 @@ def main(args):
     del trn_dataset 
     
     ## dev data
-    utt2wav = [line.split() for line in open(f'/SMIIPdata2/ASVspoof5/data/wangyx/scp/{args.dev_data_name}/wav.scp')]
-    utt2label = [line.split() for line in open(f'/SMIIPdata2/ASVspoof5/data/wangyx/scp/{args.dev_data_name}/utt2label')]
+    utt2wav = [line.split() for line in open(f'/your own path/{args.dev_data_name}/wav.scp')]
+    utt2label = [line.split() for line in open(f'/your own path/{args.dev_data_name}/utt2label')]
     
     ##########partial data debug##############
     # 将两个列表合并为一个列表
@@ -283,7 +283,7 @@ def main_worker(trn_loader, dev_loader, featCal, model, classifier, mse_loss, cr
     # additional args 
 
     label_dict = {}
-    with open(f'/SMIIPdata2/ASVspoof5/data/wangyx/scp/{args.dev_data_name}/utt2label', 'r') as file:
+    with open(f'/your own path/{args.dev_data_name}/utt2label', 'r') as file:
         for line in file:
             key, label = line.strip().split()
             label_dict[key] = (str(label))
