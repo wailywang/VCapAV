@@ -75,10 +75,6 @@ pip install -r requirement.txt
 ### Protocol Composition
 <img src="configs/data_partitioning.png" alt="Protocol Overview" width="70%"/>
 
----
-
-## Data Preparation
-
 Organize dataset directory as follows:
 
 ```
