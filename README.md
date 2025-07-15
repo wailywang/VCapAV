@@ -38,15 +38,36 @@ For most audio-visual detection applications, we recommend starting with the `Re
 ## Repository Structure
 
 ```
+## Repository Structure
+
+```
 VCapAV/
-├── aasist/        # AASIST model and configs
-├── clipclap/      # CLAP-based AV feature extractor
-├── configs/       # ResNet / LCNN training configs
-├── modules/       # Model definitions
-├── dataset/       # Data loading utilities
-├── main.py        # Training / evaluation entry point
-├── features.py    # CLAP feature extraction
+├── _engineering/          # Internal tools and engineering utilities
+├── aasist/                # AASIST model and dataset-specific code
+│   ├── config/            # AASIST config files (.conf)
+│   ├── dev/               # Dev set data
+│   ├── train/             # Training set data
+│   ├── protocols/         # Protocol definition files
+│   ├── models/            # Pretrained weights or model checkpoints
+│   ├── utils.py           # AASIST-specific utility functions
+│   └── download_dataset.py# Script to download dataset
+├── clipclap/              # CLAP-based audio-visual feature extractor
+├── configs/               # Training configs (ResNet, LCNN, etc.)
+├── dataset/               # Data loading and preprocessing logic
+├── exp/                   # Training output directory (e.g., checkpoints, logs)
+├── log/                   # Logging and evaluation output
+├── modules/               # Model architectures and backbones
+├── utils/                 # Shared utility functions
+├── features.py            # CLAP feature extraction interface
+├── infer_from_score.py    # Score post-processing and metric calculation
+├── main.py                # Entry point for training and evaluation
+├── model_utils.py         # Model loading / saving / optimizer utils
+├── other_utils.py         # Miscellaneous utility functions
+├── requirement.txt        # Top-level Python package requirements
+├── LICENSE
 └── README.md
+```
+
 ```
 
 ---
