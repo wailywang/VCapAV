@@ -179,21 +179,13 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 
 ---
 
-## Contact
-
-<a href="mailto:wa0009xi@e.ntu.edu.sg">
-  <img src="https://img.shields.io/badge/Contact-wa0009xi@e.ntu.edu.sg-blue?style=for-the-badge&logo=gmail" alt="Contact Email">
-</a>
-
----
-
-## License
-
-<a href="LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=open-source-initiative" alt="MIT License">
-</a>  
-<br>
-This repository is licensed under the <a href="LICENSE">MIT License</a>.  
-You are free to use, modify, and distribute this project for research or commercial purposes, provided that proper attribution is given.
+<p align="center">
+  <a href="mailto:wa0009xi@e.ntu.edu.sg">
+    <img src="https://img.shields.io/badge/Contact-wa0009xi@e.ntu.edu.sg-blue?style=for-the-badge&logo=gmail" alt="Contact Email">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=open-source-initiative" alt="MIT License">
+  </a>
+</p>
 
 ---
