@@ -1,6 +1,6 @@
 # VCapAV
 
-[📄 Paper] [📦 Models] [📊 Results] [▶ Training Code]
+[Paper] [Models] [Results] [Training Code]
 
 **VCapAV** is an audio-visual deepfake detection benchmark and toolkit featuring three key models: AASIST, ResNet, and LCNN. The benchmark evaluates both unimodal and cross-modal forgeries using spatial frequency features, audio log-fbanks, and raw waveform encodings.
 
@@ -71,6 +71,15 @@ aasist/
 └── protocols/
 ```
 ---
+| Subset      | Composition                                                     | Total Size          |
+|:------------|:----------------------------------------------------------------|:--------------------|
+| Audio Train | AudioLDM1, AudioLDM2, V2A-Mapper, Bonafide                      | 44,596 (11,149 * 4) |
+| Dev 1       | AudioLDM1, AudioLDM2, V2A-Mapper, Bonafide                      | 15,096 (3,774 * 4)  |
+| Dev 2       | V2A-MLP, Audiocraft, Bonafide                                   | 11,322 (3,774 * 3)  |
+| Dev 3       | AudioLDM1, AudioLDM2, V2A-Mapper, V2A-MLP, Audiocraft, Bonafide | 22,644 (3,774 * 6)  |
+| Video Train | Bonafide, Kling                                                 | 11,192, 181         |
+| Video Dev   | Bonafide, Kling                                                 | 3,731, 61           |
+
 
 ## Model Training
 
@@ -143,4 +152,4 @@ Please download and place it manually under `clipclap/clap_htsat_tiny.pt`.
 
 ## Contact
 
-Yuxi Wang (wa0009xi@e.ntu.edu.sg)
+wa0009xi@e.ntu.edu.sg
