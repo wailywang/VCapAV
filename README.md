@@ -204,14 +204,11 @@ python infer_from_score.py --score_path results/resnet_score.txt
 
 ## Pretrained Models
 
-| Model                | Size   | Location                              |
-|----------------------|--------|----------------------------------------|
-| `AASIST.pth`         | 47 MB  | `aasist/models/weights/AASIST.pth`     |
-| `AASIST-L.pth`       | 86 MB  | `aasist/models/weights/`               |
-| `clap_htsat_tiny.pt` | 1.7 GB | (Download separately, see below)       |
-
-> Note: Due to GitHub's file size limit, `clap_htsat_tiny.pt` is not included.  
-> Please manually place it at: `clipclap/clap_htsat_tiny.pt`
+| Model                | Size   | Location                                                                 |
+|----------------------|--------|--------------------------------------------------------------------------|
+| `AASIST.pth`         | 47 MB  | `aasist/models/weights/AASIST.pth`                                      |
+| `AASIST-L.pth`       | 86 MB  | `aasist/models/weights/AASIST-L.pth`                                    |
+| `clap_htsat_tiny.pt` | 1.7 GB | [HuggingFace ↗](https://huggingface.co/mali6/autocap/blob/main/clap_htsat_tiny.pt) |
 
 ---
 
