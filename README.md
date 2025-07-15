@@ -189,10 +189,10 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 
 <div align="center">
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/📝%20License-MIT-green?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="MIT License">
+    <img src="https://img.shields.io/badge/%20License-MIT-green?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="📝MIT License">
   </a> &ensp;
   <a href="mailto:wa0009xi@e.ntu.edu.sg">
-    <img src="https://img.shields.io/badge/📬%20Contact-Email-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Email">
+    <img src="https://img.shields.io/badge/%20Contact-Email-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="📬Contact Email">
   </a>
 </div>
 
