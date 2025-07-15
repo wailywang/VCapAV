@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/Dataset-📦%20Zenodo-%235E4FA2?style=for-the-badge&logo=dataverse&logoColor=white" alt="Dataset Download">
   </a>
   <span style="display:inline-block; width:24px;"></span>
-  <a href="https://github.com/yourusername/VCapAV#demo">
+  <a href="[https://github.com/yourusername/VCapAV#demo](https://vcapav.github.io/)">
     <img src="https://img.shields.io/badge/Demo-🔗%20Run-%232D3E50?style=for-the-badge&logo=playcanvas&logoColor=white" alt="Demo Link">
   </a>
 </p>
