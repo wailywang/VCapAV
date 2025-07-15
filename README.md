@@ -4,7 +4,7 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 
 ## Dataset Overview
 
-<img src="configs/statistics.png" alt="Protocol Overview" width="90%"/>
+<img src="configs/statistics.png" alt="Protocol Overview" width="70%"/>
 
 For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
 
