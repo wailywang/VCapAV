@@ -81,15 +81,6 @@ pip install -r requirement.txt
 
 ## Data Preparation
 
-Organize the AASIST data directory as follows:
-
-```
-aasist/
-├── train/
-├── dev/
-└── protocols/
-```
-
 ### Protocol Composition
 
 | Subset      | Composition                                                     | Total Samples        |
@@ -102,6 +93,47 @@ aasist/
 | Video Dev   | Bonafide, Kling                                                 | 3,731, 61            |
 
 ---
+
+## Data Preparation
+
+Organize dataset directory as follows:
+
+```
+dataset/
+├── train/
+│   ├── wav.scp
+│   └── utt2label
+├── dev/
+│   ├── wav.scp
+│   └── utt2label
+```
+
+### File Format Details
+
+**`wav.scp`**  
+Each line should contain an utterance ID and the absolute path to the corresponding audio file:
+
+```
+UtteranceID1 /path/to/audio1.wav
+UtteranceID2 /path/to/audio2.wav
+```
+
+**`utt2label`**  
+Each line should contain an utterance ID and its label (`bonafide` or `spoof`). This file is required for both training and development sets:
+
+```
+UtteranceID1 bonafide
+UtteranceID2 spoof
+```
+
+### Label Mapping
+
+The script automatically maps the string labels to integers:
+
+- `bonafide` or `genuine` → `1`
+- `spoof` or `fake` → `0`
+
+Make sure all utterance IDs in `utt2label` exist in `wav.scp`.
 
 ## Model Training
 
