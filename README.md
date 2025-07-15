@@ -9,7 +9,7 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
 
 > **Note:** The complete VCapAV dataset, including all audio-visual samples, can be downloaded from Zenodo at:  
-> [https://doi.org/10.5281/zenodo.15498946](https://doi.org/10.5281/zenodo.15498946)
+> **[https://doi.org/10.5281/zenodo.15498946](https://doi.org/10.5281/zenodo.15498946)**
 
 ---
 
