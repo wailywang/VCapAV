@@ -125,7 +125,6 @@ Each line should contain an utterance ID and its label (`bonafide` or `spoof`). 
 UtteranceID1 bonafide
 UtteranceID2 spoof
 ```
-
 ### Label Mapping
 
 The script automatically maps the string labels to integers:
@@ -134,6 +133,8 @@ The script automatically maps the string labels to integers:
 - `spoof` or `fake` → `0`
 
 Make sure all utterance IDs in `utt2label` exist in `wav.scp`.
+
+---
 
 ## Model Training
 
