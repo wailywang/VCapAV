@@ -4,6 +4,8 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 
 ## Dataset Overview
 
+<img src="configs/statistics.png" alt="Protocol Overview" width="70%"/>
+
 | Category                | Number of Clips | Total Duration (hours) |
 |-------------------------|----------------:|------------------------:|
 | Real Video              | 14,923          | 41.45                   |
@@ -83,15 +85,6 @@ pip install -r requirement.txt
 
 ### Protocol Composition
 <img src="configs/data_partitioning.png" alt="Protocol Overview" width="70%"/>
-
-| Subset      | Composition                                                     | Total Samples        |
-|-------------|------------------------------------------------------------------|----------------------|
-| Audio Train | AudioLDM1, AudioLDM2, V2A-Mapper, Bonafide                      | 44,596 (11,149 × 4)  |
-| Dev 1       | AudioLDM1, AudioLDM2, V2A-Mapper, Bonafide                      | 15,096 (3,774 × 4)   |
-| Dev 2       | V2A-MLP, Audiocraft, Bonafide                                   | 11,322 (3,774 × 3)   |
-| Dev 3       | All six types                                                   | 22,644 (3,774 × 6)   |
-| Video Train | Bonafide, Kling                                                 | 11,192, 181          |
-| Video Dev   | Bonafide, Kling                                                 | 3,731, 61            |
 
 ---
 
