@@ -183,3 +183,10 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 
 For questions or collaborations, please contact:  
 **wa0009xi@e.ntu.edu.sg**
+
+---
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute this project for research or commercial purposes, provided that proper attribution is given.
