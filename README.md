@@ -4,19 +4,7 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 
 ## Dataset Overview
 
-<img src="configs/statistics.png" alt="Protocol Overview" width="70%"/>
-
-| Category                | Number of Clips | Total Duration (hours) |
-|-------------------------|----------------:|------------------------:|
-| Real Video              | 14,923          | 41.45                   |
-| Fake Video              | 242             | 0.67                    |
-| Real Audio              | 14,923          | 41.45                   |
-| Fake Audio              | 74,615          | 207.26                  |
-| Real Video + Real Audio | 14,923          | 41.45                   |
-| Real Video + Fake Audio | 74,615          | 207.26                  |
-| Fake Video + Real Audio | 242             | 0.67                    |
-| Fake Video + Fake Audio | 1,210           | 3.36                    |
-| **Total**               | **90,990**      | **252.75**              |
+<img src="configs/statistics.png" alt="Protocol Overview" width="90%"/>
 
 For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
 
