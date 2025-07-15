@@ -4,11 +4,35 @@
 
 **VCapAV** is an audio-visual deepfake detection benchmark and toolkit featuring three key models: AASIST, ResNet, and LCNN. The benchmark evaluates both unimodal and cross-modal forgeries using spatial frequency features, audio log-fbanks, and raw waveform encodings.
 
-| Model     | Input     | Modality | Params | ACC ↑ | AUC ↑ | EER ↓ |
-|-----------|-----------|----------|--------|-------|-------|--------|
-| AASIST    | Raw Audio | Audio    | 5.0M   | 97.3  | 98.4  | 2.15   |
-| ResNet18  | Spectrum  | Visual   | 11.2M  | 96.2  | 97.1  | 3.60   |
-| LCNN      | LogFBank  | Audio    | 4.1M   | 96.7  | 97.9  | 3.05   |
+```latex
+\subsection{Dataset Statistics}
+
+\begin{table}[ht]
+  \centering
+  \caption{Statistics of the VCapAV dataset}
+  \label{tab:table1-dataset-stats}
+  \renewcommand{\arraystretch}{1.3} % 调整行距
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{lrr}
+      \toprule
+      \rowcolor{gray!20} % 灰色表头
+      \textbf{Category} & \textbf{Number of Clips} & \textbf{Total Duration (hours)} \\
+      \midrule
+      Real Video                & 14,923  & 41.45  \\
+      Fake Video                & 242     & 0.67   \\
+      Real Audio                & 14,923  & 41.45  \\
+      Fake Audio                & 74,615  & 207.26 \\
+      Real Video + Real Audio   & 14,923  & 41.45  \\
+      Real Video + Fake Audio   & 74,615  & 207.26 \\
+      Fake Video + Real Audio   & 242     & 0.67   \\
+      Fake Video + Fake Audio   & 1,210   & 3.36   \\
+      \midrule
+      \textbf{Total}            & \textbf{90,990}  & \textbf{252.75} \\
+      \bottomrule
+    \end{tabular}
+  }
+\end{table}
+```
 
 For most audio-visual detection applications, we recommend starting with the `ResNet + LCNN` ensemble.
 
