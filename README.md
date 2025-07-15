@@ -83,7 +83,7 @@ pip install -r requirement.txt
 
 ### Protocol Composition
 
-![Protocol Overview](data partitioning.png)
+![Protocol Overview](data_partitioning.png)
 
 | Subset      | Composition                                                     | Total Samples        |
 |-------------|------------------------------------------------------------------|----------------------|
