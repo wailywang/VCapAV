@@ -180,10 +180,11 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 ---
 
 <a href="mailto:wa0009xi@e.ntu.edu.sg">
-  <img src="https://img.shields.io/badge/Contact-Email-blue?style=for-the-badge&logo=gmail" alt="Contact Email">
+  <img src="https://img.shields.io/badge/Contact-Email-blue?style=flat&logo=gmail" alt="Contact Email">
 </a>
 &nbsp;&nbsp;
 <a href="LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=open-source-initiative" alt="MIT License">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat&logo=open-source-initiative" alt="MIT License">
 </a>
+
 
