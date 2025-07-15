@@ -182,10 +182,7 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 <a href="mailto:wa0009xi@e.ntu.edu.sg">
   <img src="https://img.shields.io/badge/Contact-Email-blue?style=flat&logo=gmail" alt="Contact Email">
 </a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="display:inline-block; width:48px;"></span>
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-black?style=flat&logo=open-source-initiative" alt="MIT License">
 </a>
-
-
-
