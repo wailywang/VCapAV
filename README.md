@@ -105,13 +105,6 @@ aasist/
 
 ## Model Training
 
-### AASIST
-
-```bash
-cd aasist
-python3 main.py --config ./config/AASIST.conf --comment "aasist"
-```
-
 ### ResNet18
 
 ```bash
@@ -152,6 +145,12 @@ for seed in 1; do
       --seed ${seed} \
       --early_stop 50
 done
+```
+### AASIST
+
+```bash
+cd aasist
+python3 main.py --config ./config/AASIST.conf --comment "aasist"
 ```
 
 ---
