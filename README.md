@@ -83,6 +83,8 @@ pip install -r requirement.txt
 
 ### Protocol Composition
 
+![Protocol Overview](data_partitioning.png)
+
 | Subset      | Composition                                                     | Total Samples        |
 |-------------|------------------------------------------------------------------|----------------------|
 | Audio Train | AudioLDM1, AudioLDM2, V2A-Mapper, Bonafide                      | 44,596 (11,149 × 4)  |
