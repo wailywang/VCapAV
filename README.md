@@ -208,7 +208,7 @@ python infer_from_score.py --score_path results/resnet_score.txt
 |----------------------|--------|--------------------------------------------------------------------------|
 | `AASIST.pth`         | 47 MB  | `aasist/models/weights/AASIST.pth`                                      |
 | `AASIST-L.pth`       | 86 MB  | `aasist/models/weights/AASIST-L.pth`                                    |
-| `clap_htsat_tiny.pt` | 1.7 GB | [HuggingFace ↗](https://huggingface.co/mali6/autocap/blob/main/clap_htsat_tiny.pt) |
+| `clap_htsat_tiny.pt` | 1.7 GB | [`clipclap/clap_htsat_tiny.pt`](https://huggingface.co/mali6/autocap/blob/main/clap_htsat_tiny.pt) |
 
 ---
 
