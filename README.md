@@ -188,20 +188,6 @@ python3 main.py --config ./config/AASIST.conf --comment "aasist"
 
 ---
 
-## Evaluation
-
-```bash
-python main.py --config configs/resnet.yaml --eval
-```
-
-Optional post-processing:
-
-```bash
-python infer_from_score.py --score_path results/resnet_score.txt
-```
-
----
-
 ## Pretrained Models
 
 | Model                | Size   | Location                                                                 |
