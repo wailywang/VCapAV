@@ -78,7 +78,9 @@ pip install -r requirement.txt
 ### Protocol Composition
 <img src="configs/data_partitioning.png" alt="Protocol Overview" width="70%"/>
 
-Organize dataset directory as follows:
+### File Format Details
+
+Dataset directory should be organized as follows:
 
 ```
 dataset/
@@ -89,8 +91,6 @@ dataset/
 │   ├── wav.scp
 │   └── utt2label
 ```
-
-### File Format Details
 
 **`wav.scp`**  
 Each line should contain an utterance ID and the absolute path to the corresponding audio file:
