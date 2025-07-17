@@ -23,6 +23,8 @@ This repository provides the **VCapAV dataset**, which contains both forged and 
 
 ## Dataset Overview
 
+The VCapAV dataset comprises 14,923 original audio-visual clips, each no longer than 10 seconds with audio downsampled to 16kHz. It includes 14,923 real videos and 242 fake videos (generated via Kling), paired with 14,923 real audios and 74,615 fake audios synthesized using five methods: TTA (Text-to-Audio via AudioLDM1, AudioLDM2, and AudioCraft) and V2A (Video-to-Audio via V2A-Mapper and V2A-MLP). The dataset provides combinations of real and fake video/audio pairs, supporting fine-grained evaluation of cross-modal deepfake detection.
+
 <img src="configs/statistics.png" alt="Protocol Overview" width="55%"/>
 
 > **Note:** For most audio-visual detection applications, we recommend starting with the `ResNet18 + LCNN` ensemble.
